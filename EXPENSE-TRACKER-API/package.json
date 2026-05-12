@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
-  },
+ "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
