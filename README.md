@@ -54,7 +54,7 @@ https://your-render-url.onrender.com
 ## 🏃 Run Locally
 
 1. Clone the repo
-   git clone https://github.com/your-username/expense-tracker-api
+   git clone https://github.com/aayash0101/EXPENSE-TRACKER-API
 
 2. Install dependencies
    npm install
