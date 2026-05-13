@@ -6,6 +6,7 @@ import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js'
 import expenseRoutes from './routes/expenseRoutes.js'
 import budgetRoutes from './routes/budgetRoutes.js'
+import statsRoutes from './routes/statsRoute.js'
 
 dotenv.config();
 connectDB();
@@ -24,6 +25,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/expenses', expenseRoutes);
 app.use('/api/budgets', budgetRoutes);
+app.use('/api/stats', statsRoutes)
 app.get('/', (req, res) => {
     res.send('API is running ');
 })

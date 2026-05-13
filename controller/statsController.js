@@ -74,7 +74,6 @@ export const getStats = async (req, res) => {
         month: currentMonth,
         year: currentYear
     })
-
     const budgetVsActual = await Promise.all(budgets.map(async (budget) => {
         const categoryExpenses = expenses.filter(e => e.category === budget.category)
         const spent = categoryExpenses.reduce((sum, e) => sum + e.amount, 0)
